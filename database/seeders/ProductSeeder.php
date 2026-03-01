@@ -16,15 +16,15 @@ class ProductSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => 'Brownies',
-                'price' => 60000
+                'selling_price' => 60000
             ],
             [
                 'name' => 'Roll Cake',
-                'price' => 60000
+                'selling_price' => 60000
             ],
             [
                 'name' => 'Donuts',
-                'price' => 60000
+                'selling_price' => 60000
             ],
         ]);
     }
