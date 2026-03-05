@@ -20,7 +20,7 @@ class OrderController extends Controller
         $products = Product::orderBy('name')->get();
         $saleItems = SaleItem::with('product')->latest()->get();
 
-        return view('order', compact('customers', 'products', 'saleItems'));
+        return view('order.index', compact('customers', 'products', 'saleItems'));
     }
 
     function destroy($id)

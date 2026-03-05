@@ -12,7 +12,7 @@ class CustomerController extends Controller
     {
         $customers = Customer::get();
 
-        return view('customer', compact('customers'));
+        return view('customer.index', compact('customers'));
     }
 
     public function store(Request $request)

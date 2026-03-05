@@ -13,7 +13,7 @@ class ProductController extends Controller
     {
         $products = Product::get();
 
-        return view('product', compact('products'));
+        return view('product.index', compact('products'));
     }
 
     function store(Request $request)

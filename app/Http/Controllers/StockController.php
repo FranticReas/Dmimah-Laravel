@@ -17,7 +17,7 @@ class StockController extends Controller
         $stocks = Stock::get();
         $ingredients = Stock::orderBy('name')->get();
 
-        return view('stock', compact('stocks', 'ingredients'));
+        return view('stock.index', compact('stocks', 'ingredients'));
     }
 
     function store(Request $request, InvoiceService $invoiceService)

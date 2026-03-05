@@ -125,7 +125,7 @@ class DashboardController extends Controller
         $incomeValues = $allMonths->map(fn($m) => $incomeByMonth[$m] ?? 0);
         $expenseValues = $allMonths->map(fn($m) => $expenseByMonth[$m] ?? 0);
 
-        return view('dashboard', compact(
+        return view('dashboard.index', compact(
             'orders',
             'currentMonthOrders',
             'percentageIncrease',
